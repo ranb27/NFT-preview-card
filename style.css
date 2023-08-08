@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,600;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: Outfit;
+}
+
+html{
+    background-color: hsl(217, 54%, 11%);
+}
+
+.container{
+    width: fit-content;
+    height: fit-content;
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.img:hover .inspect{
+    display: block;
+}
+
+.inspect{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 10px;
+    opacity: 60%;
+    cursor: pointer;
+    display: none;
+}
+
+.inspect svg{
+    position: absolute;
+    margin: 8rem;
+    opacity: 100%;
+}
+
+.title{
+    color: white;
+    margin: 1.5rem 0;
+}
+
+.title:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.desc{
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    width: 300px;
+}
+
+.details{
+    display: flex;
+    margin-top: 1rem;
+    width: 300px;
+}
+
+.price{
+    color: hsl(178, 100%, 50%);
+    align-items: center;
+    display: flex;
+    position: absolute;
+}
+
+.price p{
+    margin-left: 4px;
+}
+
+.timeleft{
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+.timeleft p{
+    margin-left: 4px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 2rem;
+    width: 300px;
+}
+
+.profile img{
+    width: auto;
+    height: 2rem;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 1rem .5rem 1rem 0;
+}
+
+.by{
+    color: hsl(215, 51%, 70%);
+    margin: 1rem 4px;
+}
+
+.name{
+    color: white;
+    margin: 1rem 4px;
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .container{
+        margin-top: 1.5rem;
+    }
+}
